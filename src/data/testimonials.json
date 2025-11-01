@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "role": "Software Engineer",
+    "company": "TechCorp",
+    "content": "This platform helped me land my dream job in just 2 weeks. The application process was seamless and the job matches were incredibly accurate.",
+    "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "role": "Product Manager",
+    "company": "InnovateX",
+    "content": "As a recruiter, I've found exceptional candidates through this platform. The filtering options and candidate profiles are top-notch.",
+    "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Emma Rodriguez",
+    "role": "UX Designer",
+    "company": "CreativeMinds",
+    "content": "The job recommendations are spot on. I love how the platform understands my skills and matches me with relevant opportunities.",
+    "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "role": "HR Director",
+    "company": "Global Solutions",
+    "content": "Our hiring process has become 3x faster since we started using this platform. The candidate quality has significantly improved.",
+    "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+  }
+]
