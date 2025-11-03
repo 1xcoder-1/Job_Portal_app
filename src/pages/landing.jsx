@@ -502,22 +502,53 @@ const LandingPage = () => {
         animate={ctaInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.5 }}
       >
-        <div className="bg-gradient-to-r from-indigo-900/30 to-purple-900/30 rounded-3xl p-12 border border-gray-700">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to Transform Your Career?</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-            Join thousands of professionals who found their dream job or perfect candidate through our platform.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-900/30 to-purple-900/30 p-12 border border-gray-700 backdrop-blur-sm">
+          {/* Animated background elements */}
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500 rounded-full mix-blend-soft-light filter blur-3xl opacity-30 animate-pulse"></div>
+          
+          <div className="relative z-10">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold mb-4 text-white"
+              initial={{ opacity: 0, y: 20 }}
+              animate={ctaInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.2 }}
+            >
+              Ready to Transform Your Career?
+            </motion.h2>
+            <motion.p 
+              className="text-gray-300 max-w-2xl mx-auto mb-8 text-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={ctaInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.4 }}
+            >
+              Join thousands of professionals who found their dream job or perfect candidate through our platform.
+            </motion.p>
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={ctaInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.6 }}
+            >
               <Link to={"/jobs"}>
-                <Button variant="blue" size="xl" className="rounded-full px-8 py-6 text-lg font-semibold">
+                <Button 
+                  variant="default" 
+                  size="lg" 
+                  className="px-10 py-4 text-lg font-semibold shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white text-black hover:bg-gray-100 border border-white min-w-[80px]"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   Find Jobs Now
                 </Button>
               </Link>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link to={"/post-job"}>
-                <Button variant="secondary" size="xl" className="rounded-full px-8 py-6 text-lg font-semibold bg-gray-800 hover:bg-gray-700">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="px-10 py-4 text-lg font-semibold shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-transparent text-white border border-white hover:bg-white/10 min-w-[80px]"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   Post a Job
                 </Button>
               </Link>

@@ -97,3 +97,19 @@
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+
+/* Pulse animation for CTA section */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
