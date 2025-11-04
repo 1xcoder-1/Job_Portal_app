@@ -53,7 +53,11 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button variant="outline" className="px-4 py-2 text-sm bg-transparent border border-white text-white hover:bg-white/10 transition-all duration-300">
+              <Button 
+                variant="outline" 
+                className="px-4 py-2 text-sm bg-transparent border border-white text-white hover:bg-white/10 transition-all duration-300"
+                onClick={() => setShowSignIn(true)}
+              >
                 Login
               </Button>
             </motion.div>
